@@ -1,0 +1,11 @@
+###########################################################
+             how to run a java program
+###########################################################
+ Step 1- you should have a computer/laptop/PC with OS(operating system).
+ Step 2- make a new file with .java extension.
+ Step 3- Write code of java programing.
+ Step 4 - Save Helloworld.java file
+ Step 5 - compiling:without compiling program will not run.
+          Command:java <file-name> eg- javac Helloworld .java
+Step 6 - Run/execute
+Command: java <file-name> e.g- java Helloworld

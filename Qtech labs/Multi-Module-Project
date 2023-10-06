@@ -1,0 +1,17 @@
+
+
+-----Steps To Create Multi Module project-----
+
+1) First create a spring boot maven project
+2) Then right click on that project and create a multi module maven project
+3)Skip the architype
+4) New module is created
+5) Now check the pom.xml files
+6)write <packaging>pom</packaging> in parent pom.xml
+7)write <packaging>jar</packaging> in child pom.xml
+8)give the artifact name b/w module for example -->
+<modules>
+ <module>artifact-name<module>
+<modules>
+9)Now put management dependency tag in parent pom.xml and put inside dependencies
+tag those who y want to be used by other pom.xml

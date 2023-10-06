@@ -1,0 +1,37 @@
+minikube start --addons=ingress --cpus=2 --cni=flannel --install-addons=true
+--kubernetes-version=stable --memory=6g
+
+--------
+POINTS-
+--------
+#Pods are not visible outside the kuberenetes clusture.
+
+-------------------------------------
+Commands of kuberenetes in terminal
+--------------------------------------
+kubectl version
+kubectl get all
+kubectl describe po <name-of-microservice>
+kubectl logs <name-of-microservice/template>
+delete command --> kubectl delete po <name-of-microservice>
+kubectl rollout status deploy/replicaset/service  <name-of-microservice/template>
+
+kubectl top nodes/pods --> (enable matrix server)
+command to enable --> minkube addons list
+                  --> minikube addons enable metrics-server
+
+kubectl describe node minikube
+-------------------
+TO APPLY POD FILE -
+--------------------
+#pod ki yaml file bnao
+kubectl apply -f pod.yaml
+
+#service ki file bnao take yh pod ko visible bna ske
+kubectl apply -f service.yaml
+
+#replicaset bna lo tu alg se pod bnana ki jrorat nai,replica ki yaml file bnao.
+kubectl apply -f replicaset.yaml
+
+#deployment ka file bnao yaml - recommended thing
+kubectl apply -f deployment.yaml

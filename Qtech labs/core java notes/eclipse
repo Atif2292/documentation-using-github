@@ -1,0 +1,62 @@
+-----------------------------------------------------------------
+            eclipse program tutorial
+------------------------------------------------------------------
+
+------------------Steps to follow given below --------------------------------
+
+
+1) create new java project -- shortcut to open java project - ctrl n
+2)now name the project name as all worlds in small letters and instead of dash make highfun
+3) Now click on src and type ctrl n (shortcut) and search class
+4) open class and name the package as example- com.companyname.service  and name the class as
+ - first letter should be in bold letters and not make any space between letters start thr
+word with bold letters.
+for example class name- BankingService
+5)now click on the class and type ctrl n . search packages and remove the
+.service and add -1)utils
+                  2)repository
+                  3)controller
+                  4)configuration
+                  5)service
+                  6)dto     } = all in small letters.
+
+6)Click on ctrl n and search class and do this clicking again nd again and make
+clas name first letter in bold name and other in small
+for example - Controller,Dto,Config etc
+              -------------SHORTCUTS--------------
+------------------------------------------------------------
+copy paste shortcut - ctrl C arrow button.
+ALT + SHIFT + S - to generate getter and setter opt.
+ctrl m maximize and mini.
+ctz z for undo.
+ctrl shift R - for open resources.
+ctrl shift T - for open type
+ctrl shift f - to make thr code look good (systematic)
+ctrl shift o - for import
+ctrl 1 - to get suggestion
+ctrl 3 - for console variable etc.
+SHIFT+ alt + R - if u edit something in eclipse y can take all the same one in
+one go.
+--------------------------------------------------------------------
+
+class - source file - source code. we can create multiple classes in a source file.
+         ----------------some points------------------
+1) Execution of a java program always starts from a special method named as "main"
+2) For printing any statement on the console we will use System.out.println()
+
+CONCEPT 01 -- How to Print anything in java program over the Console
+ Pattern 1
+System.out.println("\n");
+System.out.println("one newline before");
+
+ Pattern 2 -- little complex
+int number1 = 12;
+    float number2 = 23.4f;
+
+ CONCEPT 02 -- Data Types
+mysql - yaho baba.
+
+
+float d = 123.456F;
+
+double d1 = 123.456;

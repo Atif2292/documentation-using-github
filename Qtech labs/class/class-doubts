@@ -1,0 +1,15 @@
+--------------------------------------------------
+           *******DOUBTS********
+--------------------------------------------------
+1)LinkedList
+getlast();
+getfirst();
+dono mein he iske upr vale method ke value aa rhe hain.
+usage in LinkList.
+
+2-TreeSet
+  Null acceptance:
+   For the empty TreeSet as the 1st element "null" insertion is possible but after
+  inserting that null if we are trying to insert any other we will get
+  NullPointerException.
+  *error bata rha hai.

@@ -1,0 +1,30 @@
+
+
+---------------APACHE KAFKA----------------
+
+->A distributed streaming platform.
+
+Detail:
+Apache Kafka is a distributed data streaming platform that can publish,
+subscribe to, store, and process streams of records in real time. It is designed
+to handle data streams from multiple sources and deliver them to multiple consumers.
+In short, it moves massive amounts of data—not just from point A to B,
+but from points A to Z and anywhere else you need, all at the same time.
+
+=========
+Messaging
+=========
+
+Messaging, very briefly, it’s just the act to send a message from one place to
+another. It has three principal actors:
+
+-->Producer: Who produces and send the messages to one or more queues;
+
+-->Queue: A buffer data structure, that receives (from the producers) and
+   delivers messages (to the consumers) in a FIFO (First-In First-Out) way.
+   When a message is delivered, it’s removed forever from the queue, there’s
+    no chance to get it back;
+
+-->Consumer: Who is subscribed to one or more queues and receives their messages
+    when published.
+ack = all — https://static.javatpoint.com/tutorial/kafka/images/apache-kafka-producer5.png

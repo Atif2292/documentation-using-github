@@ -1,0 +1,27 @@
+]system.out.println() - is a method in a printstream class.
+test.name.length(); - its is a class,static variableof type string present in test class.
+
+
+  structure of java program
+
+  atmost one package statement
+  import statement - any no. is allowed.
+  class/interface/enum declaration - any number.
+
+  NOTE: any empty source file is a valid java program.
+
+  pdf 4- pg 27-28
+
+  NOTE: If the value of variable is varied from object to object such type of variables
+  are called instance variable.
+
+---------------------
+Unary operator
+left shift
+right shift
+Unicode system
+ternary operator
+Q:Define the JIT compiler in Java?
+A:Just In Time Compiler is the component of JRE, which is used to compile the
+bytecodes of the particular method into the native machine code. This compiled
+code of the method is directly called by JVM without interpreting it.

@@ -1,0 +1,14 @@
+------------------------------------------------------------------
+                         #Core java#
+------------------------------------------------------------------
+HOW TO DOWNLOAD AND INSTALL JAVA PROGRAM-
+*Download JDK 8.
+link- https://www.oracle.com/in/java/technologies/downloads/#java8-windows
+*NOW open environmental variable through settings or my PC.
+*Now edit the Java Home - Step 1 - delete the existing java home file
+                        - Step 2 - create a new java home
+                        - Step 3 - Got to file folder and copy the java 8 address.
+                        - Step 4 - paste it on new java home file in environmental variable.
+                        - Step 5- save the file there and come back.
+                        - Step 6 - opem commandd prompt and write javac or java -version
+                        - step 7 - If the file run that means java is installed in your application.

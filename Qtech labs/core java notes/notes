@@ -1,0 +1,671 @@
+****************************************************************************
+              -------------JAVA NOTES----------------
+****************************************************************************
+
+           *JAVA IS OOPS (object oriented programming system)*
+
+===========================
+----What is an object in Java----
+===========================
+
+1- An entity that has state and behavior is known as an object.
+2- An object has three characteristics:
+State: represents the data (value) of an object.(variable)
+Behavior: represents the behavior (functionality) of an object such as deposit,
+withdraw, etc.
+Identity: An object identity is typically implemented via a unique ID.
+
+===========================
+---What is an Class in Java---
+===========================
+
+1- A class is a group of objects which have common properties.
+2- It is a template or blueprint from which objects are created.
+3- It is a logical entity and It can't be physical.
+4-Class ke andr state and behavior hota hain state variable define
+   krte hain aur behaviour method ko.
+                      *                         *
+             -------- A class in Java can contain: --------
+
+                        1-  Fields
+                        2-  Methods
+                        3-  Constructors
+                        4-  Blocks
+                        5-  Nested class and interface
+
+**************************
+Syntax to declare a class:
+
+    class <class_name>{
+    fields;
+    method;
+      }
+
+====================
+Java static keyword
+====================
+
+1-The static keyword in Java is used for memory management mainly.
+2-We can apply static keyword with variables, methods, blocks and nested classes.
+
+NOTE: Java static property is shared to all objects.
+
+
+3-The static variable can be used to refer to the common property of all objects
+(which is not unique for each object), for example, the company name of employees,
+ college name of students, etc.
+
+4-The static variable gets memory only once in the class area at the time of class
+loading.
+
+===================
+Java Variables
+====================
+
+1-A variable is a container which holds the value while the Java program is executed.
+2-A variable i3) Static variables assigned with a data type.
+3-Variable is a name of memory location.
+4-There are three types of variables in java: local, instance and static.
+
+There are two types of data types in Java: primitive and non-primitive.
+
+1) Local Variable:A variable declared inside the body of the method is called local variable.
+ You can use this variable only within that method and the other methods in the class aren't
+ even aware that the variable exists.
+
+
+2) Instance Variable:A variable declared inside the class but outside the body of the method,
+ is called an instance variable. It is not declared as static.
+
+3) Static variable: A variable that is declared as static is called a static variable.
+It cannot be local. You can create a single copy of the static variable and share it
+among all the instances of the class.
+Memory allocation for static variables happens only once when the class is loaded in the memory.
+
+4)Method Overloading in JAVA - If a class has multiple methods having same name but
+ different in parameters, it is known as Method Overloading.
+ for example -
+	            public String addti1on(int a,int b, int c) {
+	          	return null;
+
+            	}
+	public String addtion(int a,int b, int d) {
+	return null;
+	}
+
+======================
+Interface in Java
+======================
+
+1)There can be only abstract method in the JAVA interface,not method body.
+2)It is use to achieve abstraction and multiple inheritance in JAVA.
+3)In other words,you can say that interface can  have abstract method and variables.
+4)It cannot have a method body.
+5)It can not be instantiated just like the abstract class.
+
+Syntax:
+
+    interface <interface_name>{
+
+        // declare constant fields
+        // declare methods that abstract
+        // by default.
+}
+
+======================
+Inheritance in Java
+======================
+
+1)Class: A class is a group of objects which have common properties. It is a template
+or blueprint from which objects are created.
+
+2)Sub Class/Child Class: Subclass is a class which inherits the other class.
+ It is also called a derived class, extended class, or child class.
+
+3)Super Class/Parent Class: Superclass is the class from where a subclass inherits
+ the features. It is also called a base class or a parent class.
+
+4)Reusability: As the name specifies, reusability is a mechanism which facilitates
+ you to reuse the fields and methods of the existing class when you create a new class.
+  You can use the same fields and methods already defined in the previous class.
+
+5)Method Overloading in JAVA - If a class has multiple methods having same name but
+   different in parameters, it is known as Method Overloading.
+   for example -
+  	public String addti1on(int a,int b, int c) {
+  		return null;
+
+  	}
+  	public String addtion(int a,int b, int d) {
+  	return null;
+  	}
+
+6)Overriding in JAVA - If a parent/super class having methods in it ...it can be
+overiden over a childclass and we can also edit it later or make our own method in it.
+
+NOTE:ek class sirf ek class ko extend kr skte aur multiple class ko implement kr
+skte hn.
+NOTE:ek contract ke multiple implementation ho skta  hain. Par ek class ke Multiple
+extend nahi ho skta.
+*******************************
+The syntax of Java Inheritance
+*******************************
+      class Subclass-name extends Superclass-name
+      {
+         //methods and fields
+      }
+
+Note: Multiple inheritance is not supported in Java through class.
+
+# On the basis of class, there can be three types of inheritance in java: single,
+ multilevel and hierarchical.
+
+********* Single Inheritance Example***************
+
+When  When a class inherits another class, it is known as a single inheritance.
+a class inherits another class, it is known as a single inheritance.
+In the example given below, Dog class inherits the Animal class,
+so there is the single inheritance.
+
+######################################################
+SYNTEXT-
+class Animal{
+void eat(){System.out.println("eating...");}
+}
+class Dog extends Animal{
+void bark(){System.out.println("barking...");}
+}
+
+**************Hierarchical Inheritance Example************
+
+When two or more classes inherits a single class, it is known as hierarchical inheritance.
+In the example given below, Dog and Cat classes inherits the Animal class, so there is
+hierarchical inheritance.
+
+*************Multilevel Inheritance Example***********
+
+When there is a chain of inheritance, it is known as multilevel inheritance.
+As you can see in the example given below, BabyDog class inherits the Dog class
+which again inherits the Animal class, so there is a multilevel inheritance.
+
+====================
+Java final variable
+====================
+
+If you make any variable as final, you cannot change the value of final variable.
+
+===============
+JAVA abstract
+===============
+
+1)A class which is declared with the abstract keyword is known as an abstract
+class in Java.
+2)It can have abstract and non-abstract methods (method with the body).
+
+---------------
+Abstract class
+----------------
+
+  1)  An abstract class must be declared with an abstract keyword.
+  2)  It can have abstract and non-abstract methods.
+  3)  It cannot be instantiated. - It means ki Object/Instance nahi ban skta.
+  4)  It can have constructors and static methods also.
+  5)  It can have final methods which will force the subclass not to change the
+  body of the method.
+
+NOTE 1: Basically ek contraction hota hain kyuki isme hme return type nahi dena hota hain
+as compared to method.Isme hame sirf method declaration  likhne hoti hn Isme body nahi hoti-
+ for eg. public abstract int addition(int no.01, int no.02).
+
+NOTE 2: Ek abstract class ke andr he abstract method valid ho skta hain.
+
+============
+CONSTRUCTOR
+============
+
+Class mein Constructor bhi hote hain object/Instance aur method ki alawa.
+
+-------------------------------------
+Rules for creating Java constructor
+-------------------------------------
+
+1)Constructor name must be the same as its class name
+2)A Constructor must have no explicit return type
+3)A Java constructor cannot be abstract, static, final, and synchronized
+
+Rule: If there is no constructor in a class, compiler automatically creates a
+default constructor.
+ USE: A constructor is used to initialize the state of an object.
+---------------------------
+Types of Java constructors
+---------------------------
+
+There are two types of constructors in Java:
+
+1)Parameterized constructor : A constructor which has a specific number
+of parameters is called a parameterized constructor
+2)Default constructor(no-arg constructor): A constructor is called "Default Constructor"
+when it doesn't have any parameter.
+
+SYNTEXT-
+
+public <classname>(){
+  }
+ Basically jab ham object banata new se tab uske age jo hm class ka name likhte hn vahi
+ CONSTRUCTOR hain. for eg - product obj = new product(); isme product constructor hain.
+
+=============
+OBJECT CLASS
+=============
+
+OBJECT - ObJECT sabhi classes ke default parent class hoti han ya Superclass,
+Isko hame dalna nahi padhta kuch libray JAVA mein pre defined aa jati hain vaisehe
+jab ham koi class banta hain tu apna app uske ek superclass ban jate hn OBJECT
+jo show nahi hoti.
+
+=======
+ARRAYS
+=======
+
+1)Java array is an object which contains elements of a similar data type.
+2)Additionally, The elements of an array are stored in a contiguous memory location.
+3)It is a data structure where we store similar elements.
+4)We can store only a fixed set of elements in a Java array.
+5)Arrays can hold only homogeneous data elements
+---------------
+Disadvantages
+---------------
+
+Size Limit: We can store only the fixed size of elements in the array and It doesn't
+grow its size at runtime.
+
+SYNTEXT -
+
+1)Syntax to Declare an Array in Java-
+datatype[] variable/object;
+
+2)Instantiation of an Array in Java-
+variable = new datatype[size];
+
+for eg-
+int a[]=new int[5];//declaration and instantiation
+a[0]=10;//initialization
+
+NOTE 1: Array string starts with a value of 0.
+
+------------------------------------------------------------
+Declaration, Instantiation and Initialization of Java Array
+------------------------------------------------------------
+
+We can declare, instantiate and initialize the java array together by:
+int a[]=new int[5];//declaration and instantiation
+a[0]=10;//initialization
+
+
+==================
+COLLECTION IN JAVA
+==================
+
+Collection ek Interface class hain.
+
+1.If we want to represent a group of "individual objects" as a single entity then we
+should go for collection.
+2. In general we can consider collection as root interface of entire collection
+framework.
+3. Collection interface defines the most common methods which can be applicable
+for any collection object.
+4. There is no concrete class which implements Collection interface directly.
+5.The Collection in Java is a framework that provides an architecture to store and
+manipulate the group of objects.
+
+------------------------------
+What is Collection framework
+------------------------------
+
+The Collection framework represents a unified architecture for storing and
+ manipulating a group of objects. It has:
+
+1)Interfaces and its implementations, i.e., classes
+2)Algorithm
+
+NOTE:It is basically a container jo OBJECTS rkna ke lia banaya gaya hain.
+
+---------
+List:
+----------
+
+1. It is the child interface of Collection.
+2. If we want to represent a group of individual objects as a single entity where
+"duplicates are allow and insertion order must be preserved" then we should go
+for List interface.
+
+-----------
+ArrayList:
+------------
+
+1. The underlying data structure is resizable array (or) growable array.
+2. Duplicate objects are allowed.
+3. Insertion order preserved.
+4. Heterogeneous objects are allowed.(except TreeSet , TreeM ap every where
+heterogenious objects are allowed)
+5. Null insertion is possible.
+
+
+ Collections class defines the following method to return synchronized version
+of List.
+
+List l1=Collections.synchronizedList(a);
+here l1 is synchronized and,
+a is non-synchronized.
+
+ Similarly we can get synchronized version of Set and M ap objects by using the
+following methods.
+
+1) public static Set synchronizedSet(Set s);
+2) public static Map synchronizedM ap(Map m);
+3)ArrayList is the best choice if our frequent operation is retrieval.
+4)ArrayList is the worst choice if our frequent operation is insertion (or)deletion
+in the middle because it requires several internal shift operations.
+********
+NOTE:Synchronization in java is the capability to control the access of multiple
+threads to any shared resource.
+********
+---------
+KEYWORDS
+---------
+variable.add(output);
+variable.remove(output no. to remove);
+variable.clear(); to clear All.
+for eg-
+	  a.add("name");
+		a.add(1);
+		System.out.println(a);//[name,1]
+		a.remove(1);
+		System.out.println(a);//[name]
+		a.add(10);
+		System.out.println(a);//[name,10]
+		a.clear();
+		System.out.println(a);//[]
+
+---------
+LINKLIST
+---------
+
+1. The underlying data structure is double LinkedList
+2. If our frequent operation is insertion (or) deletion in the middle then
+LinkedList is the best choice.
+3. If our frequent operation is retrieval operation then LinkedList is worst choice.
+4. Duplicate objects are allowed.
+5. Insertion order is preserved.
+6. Heterogeneous objects are allowed.
+7. Null insertion is possible.
+8. Implements Serializable and Cloneable interfaces but not RandomAccess.
+i)Cloneable: interface in Java is a marker interface that is used to indicate
+ that a class can be cloned.
+ii)To serialize an object means to convert its state to a byte stream so that the
+byte stream can be reverted back into a copy of the object.
+Explaination:basically yh hame recreate krne dete hain as a new object aur purane
+object ko bacha kr rkte hain.
+************************************
+To provide support for this requirement LinkedList class defines the following 6
+specific methods.
+1. void addFirst(Object o);
+2. void addLast(Object o);
+3. Object getFirst();
+4. Object getLast();
+5. Object removeFirst();
+6. Object removeLast();
+
+NOTE:We can apply these methods only on LinkedList object.
+
+SYNTEXT-
+public class LinkListDemo {
+
+	public static void main(String[] args) {
+		LinkedList a = new LinkedList();
+
+		a.add(10);
+		a.add("ashok");
+		System.out.println(a);// [10,ashok]
+		a.set(0, "software");
+		System.out.println(a);// [software,ashok ]
+
+		a.addLast("venky");
+		System.out.println(a);// [software,ashok, venky]
+		a.removeLast();
+		System.out.println(a);// [software , ashok ]
+		a.addFirst("vvv");
+		System.out.println(a);// [vvv,software,ashok]
+		a.removeFirst();
+		System.out.println(a);// [software,ashok]
+		a.getFirst();
+		System.out.println(a);// [software,ashok]
+
+		a.getLast();
+		System.out.println(a);// [software,ashok]
+
+	}
+}
+NOTE:getFirst(): This method returns the first element in the LinkedList.
+If the LinkedList is empty, a NoSuchElementException is thrown. getLast():
+This method returns the last element in the LinkedList. If the LinkedList is
+empty, a NoSuchElementException is thrown.
+
+----------
+Set:
+----------
+
+1. It is the child interface of Collection.
+2. If we want to represent a group of individual objects as single entity "where
+duplicates are not allow and insertion order is not preserved" then we should go
+for Set interface.
+
+---------
+HASHSET
+---------
+
+1. The underlying data structure is Hashtable.
+2. Insertion order is not preserved and it is based on hash code of the objects.
+3. Duplicate objects are not allowed.
+4. If we are trying to insert duplicate objects we won't get compile time error and
+runtime error add() method simply returns false.
+5. Heterogeneous objects are allowed.
+6. Null insertion is possible.(only once)
+7. Implements Serializable and Cloneable interfaces but not RandomAccess.
+8. HashSet is best suitable, if our frequent operation is "Search".
+
+SYntext
+public static void main(String[] args)
+  {
+    HashSet h=new HashSet();
+    h.add("B");
+    h.add("C");
+    h.add("D");
+    h.add("Z");
+    h.add(null);
+    h.add(10);
+    System.out.println(h.add("Z"));//false
+    System.out.println(h);//[null, D, B, C, 10, Z]
+    }
+
+---------
+TreeSet
+---------
+NOTE: Null insertion is possible(only once).
+
+1. The underlying data structure is balanced tree.
+2. Duplicate objects are not allowed.
+3. Insertion order is not preserved and it is based on some sorting order of objects.
+4. Heterogeneous objects are not allowed if we are trying to insert heterogeneous
+objects then we will get ClassCastException.
+
+
+Example 1:
+import java.util.*;
+class TreeSetDemo
+{
+  public static void main(String[] args)
+  {
+    TreeSet t=new TreeSet();
+    t.add("A");
+    t.add("a");
+    t.add("B");
+    t.add("Z");
+    t.add("L");
+    //t.add(new Integer(10));//ClassCastException
+    //t.add(null);//NullPointerException
+    System.out.println(t);//[A, B, L, Z, a]
+    }
+}
+Null acceptance:
+ For the empty TreeSet as the 1st element "null" insertion is possible but after
+inserting that null if we are trying to insert any other we will get
+NullPointerException.
+ For the non empty TreeSet if we are trying to insert null then we will get
+NullPointerException.
+
+-------
+Map:
+-------
+
+1. Map is not child interface of Collection.
+2. If we want to represent a group of objects as key-value pairs then we should go for
+Map interface.
+3. Duplicate keys are not allowed but values can be duplicated.
+
+-------
+HashMap
+-------
+
+1. The underlying data structure is Hashtable.
+2. Duplicate keys are not allowed but values can be duplicated.
+3. Insertion order is not preserved and it is based on hash code of the keys.
+4. Heterogeneous objects are allowed for both key and value.
+5. Null is allowed for keys(only once) and for values(any number of times).
+6. It is best suitable for Search operations.
+
+SYNTEXT-
+public static void main(String[] args)
+{
+  HashMap m=new HashMap();
+  m.put(null, 0);//This will not print in console.
+  m.put( null,700);
+  m.put("balaiah",800);
+  m.put("venkatesh",200);
+  m.put("nagarjuna",500);
+  System.out.println(m);
+
+}
+
+--------
+TreeMap:
+--------
+
+1. The underlying data structure is RED-BLACK Tree.
+2. Duplicate keys are not allowed but values can be duplicated.
+3. Insertion order is not preserved and all entries will be inserted according to some
+sorting order of keys.
+4. If we are depending on default natural sorting order keys should be homogeneous
+and Comparable otherwise we will get ClassCastException.
+5. If we are defining our own sorting order by Comparator then keys can be
+heterogeneous and non Comparable.
+6. There are no restrictions on values they can be heterogeneous and non
+Comparable.
+7. For the empty TreeM ap as first entry null key is allowed but after inserting that
+entry if we are trying to insert any other entry we will get NullPointerException.
+8. For the non empty TreeM ap if we are trying to insert an entry with null key we will
+get NullPointerException.
+9. There are no restrictions for null values.
+
+SYNTEXT-
+public static void main(String[] args)
+  {
+    TreeMap t=new TreeMap(new MyComparator());
+    t.put("XXX",10);
+    t.put("AAA",20);
+    t.put("ZZZ",30);
+    t.put("LLL",40);
+    System.out.println(t);//{ZZZ=30, XXX=10, LLL=40,
+AAA=20}
+  }
+  NOTE: Null value not even accepted at once too.
+
+---------
+Cursors
+---------
+If we want to get objects one by one from the collection then we should go for
+cursor.
+----------
+Iterator:
+----------
+1. We can use Iterator to get objects one by one from any collection object.
+2. We can apply Iterator concept for any collection object and it is a universal cursor.
+3. While iterating the objects by Iterator we can perform both read and remove
+operations.
+We can get Iterator object by using iterator() method of Collection interface.
+Iterator itr=c.iterator();
+Iterator interface defines the following 3 methods.
+1. public boolean hasNext();
+2. public object next();
+3. public void remove();
+
+Example:
+import java.util.*;
+class IteratorDemo
+{
+  public static void main(String[] args)
+  {
+    ArrayList a=new ArrayList();
+    for(int i=0;i<=10;i++)
+    {
+      a.add(i);
+    }
+    System.out.println(a);
+
+
+=========
+GENERICS
+=========
+
+public ResponseEntity<String> openaccount() {
+  //body
+}
+class Test<T extends RunnableandNumber> {} (invalid)
+because Runnable IS A CLASS.
+Note: we have to take first class then interface.
+
+==================
+JAVA.LANG PACKAGES
+==================
+
+OBJECT,STRING-(Imutable) - object,string ek Imutable class hain.
+Imutable - Imutable aise classes hoti hain jinke class/object kabhi change nahi
+hoti hain.
+(Iska mtlb hain ke agr obj banjaye tu ham uske state change na kr sake, for eg obj1
+hain tu ham usse obj2 na kr paye aur agr obj2 kr tu ussse ek naya obj assign ho jaye.)
+
+===================
+COMMAND STATEMENTS
+===================
+
+-------------
+For loop
+------------
+
+for(int i=0;i<a.length;i++) [length is the property of array]
+i++ indicates the increment and i-- indicates the decrement,
+i<a is a condition ,
+int i=0 This part is initialization.
+
+================
+Stack and QUEUE
+=================
+
+Stack is LIFO(Last In Fast Out):
+In Stack when input a value through push method it is added in the Datastructure
+of array and we can remove it through a method of pop. In this the first/last stack
+trace fill first/last and last/first stack trace remove last/first
+
+Queue is FIFO (First In First Out) :In Queue when input a value through push
+method it is added in the Datastructure of array and we can remove it through a
+method of pop. isme pehle jo bhara jayga wahi sbse pehle niklega stack trace se.

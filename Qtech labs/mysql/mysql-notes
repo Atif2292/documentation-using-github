@@ -1,0 +1,176 @@
+  AFter restarting run these commands in terminal to start your mySQL.
+  sudo service mysql stop
+docker container start local-mysql
+
+
+docker container ls
+docker container ls -a
+
+////////////////////NOTES-for-mySQL///////////////////////////////////-------------
+*DAtabase are of two types---   1-Relational Database - ex-my SQL,Oracle.
+                               2-NO-SQL database      - ex-Casendra,Mongo DB.
+
+------------------------
+not null indicates that it cant be null and if null is written y cannot input in any value.
+create table personal(
+id int not null unique auto_increment,
+name varchar(50),
+age int not null
+
+)
+-------------
+above information is given about how to create table and what keyword we usually use in it.
+Now we are going to insert info in the table below-
+------------------
+
+insert into personal(id,name,age)
+values(1,atif,8),
+(2,"munaf",10);
+
+-----------------
+values is used for more then one information.
+this sign(;) indicates that no more information to insert.
+id is not mandotory to write because we created it as auto_increment.*
+name should be in(" ").
+-----------------------
+
+TO select any file we write-
+select* from personal;---(*)this indicate from all columns in personal named table.
+--------------------------
+
+where clause this is used in databse to contrain anything like-
+SELECT * FROM personal
+where age >5
+
+this will give result only those table data whose age is greater then 5
+-------------------------
+
+there are some operators named as 'and,or,between,not,not between'etc.
+IN operator.-for ex-
+SELECT * FROM personal
+where id in (1,2).
+-------------------------
+
+LIke Operator syntax -
+SELECT * FROM personal
+where name like "%f"
+its basically diff-diff patterns like- " "%alphabate", %alp%", "alp%",etc.
+---------------------
+-regexp -
+
+SELECT * FROM personal
+where name Regexp '[a]'
+------------------------------
+
+order by command is used to make the table in a order.
+SELECT * FROM personal
+where name Regexp '[a]'
+order by name asc;
+------------------------
+
+this command is used to take distinct properties.-eg.
+SELECT distinct age
+ FROM personal
+order by age;
+---------------------
+
+offset is nothing but a starting point it indicates from where to start.
+limit indicates that how much values we can add.
+SELECT *
+ FROM personal
+ limit 0,2; here 0 is offset and 2 is limt.
+------------------------
+
+As is use to change the name for ex- percenctage AS name --so in table below percenatge table is denoted by name.
+Count, Sum, Min ,Max, Avg-
+used as need -eg. select max(age) in this max age will come.
+---------------------------
+
+this is use to updATE anything in table.
+update personal
+set age = 17
+where id in (1,2);
+-----------------------------------
+
+commit is use to commit the file
+ROLLBACK IS USe to reget the deleted file.
+
+update personal
+set age = 17
+where id in (1,2);
+
+commit;
+update personal
+set age = 19
+where id in(1)
+
+rollback;
+--------------------
+
+delete is used as -
+
+delete from personal
+where age = 17;
+---------------------------
+
+a table can have only one primary key.
+
+create table personal(
+id int not null unique auto_increment,
+name varchar(50),
+age int not null,
+primary key (id)
+
+);
+---------------------
+
+foreign key is basically a key which joins other tables.
+
+create table application(
+id int not null unique auto_increment,
+name varchar(50),
+age int not null,
+primary key (id),
+foreign key (city) reference personal (id)
+);
+---------------------------------
+inner join tables
+
+SELECT * FROM personal(table name1)
+inner join application(table name 2)
+on table 1 column(foreign key)= table 2 column(primary key);
+-----------------------------------------------
+
+all info of left join table weather it is null or not null
+
+SELECT * FROM personal(table name1)
+left join application(table name 2)
+on table 1 column(foreign key)= table 2 column(primary key);
+---------------------------------------------------
+
+all info of right join table weather it is null or not null
+
+SELECT * FROM personal(table name1)
+right join application(table name 2)
+on table 1 column(foreign key)= table 2 column(primaryprimary key);
+------------------------------------
+
+SELECT * FROM personal(table name1)
+cross join application(table name 2)
+similar for cross join if three value in table is given and 3 in table 2 is given then outcomes will come as 9 tables.
+------------------------------------------------------------
+
+if multiple tables to connect-
+SELECT * FROM personal(table name1)
+inner join application(table name 2)
+on table 1 column(foreign key)= table 2 column(primary key)
+
+inner join student(table 3)
+on table 1 column(foreign key)= table 3 column(primary key);
+------------------------------------------------------------------
+
+
+
+---------------------finish lec25--------------------------
+
+ /////////////////////////////////--end--///////////////////////////////////

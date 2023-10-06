@@ -1,0 +1,39 @@
+ *************
+Inbound RULE
+*************
+You can give access to other that who can access your machine.
+
+*************
+Outbound RULE
+*************
+Give access to your machine that how much access you get to other machine .
+
+----------------------------------------------------------------
+NACL - network access control layer. - subnet level security.
+*Instance EC2 - on demand instance.*
+#CIDR
+#SSH agent forwarding
+----------------------------------------------------------------
+
+*******************************************************
+what we need when we create vpc (virtual private cloud)
+********************************************************
+
+REQUIREMENT-  CREATING OWN VPC
+
+STEP-1:then we have to create a ec2 instance
+
+STEP-2:then we have to create subnet for public nd private
+
+STEP-3:then we have to create route table
+
+STEP-4:then we have to create network acls
+
+STEP-5:then we have to create security group
+
+STEP-6:then we have to create a internet gateway and make it un detach
+
+STEP-7:then we have go in terminal to check it we have to run first
+  chmod 400 <key-name>.pem
+
+STEP-8:then  ssh -i "<key-name>.pem" ubuntu@IP

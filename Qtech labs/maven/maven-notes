@@ -1,0 +1,57 @@
+                 -{pom.xml files jaha mile wo maven project hn.}-
+
+                           MAVEN -A build tool.
+
+                    ///////////maven commands///////////
+1- MVN clean
+2- MVN compile
+3- MVN build
+4- MVN package
+5- MVN install
+
+-----------------
+Maven Coordinates
+------------------
+1) artifactID
+2)GroupID
+3)Version
+
+
+
+
+
+
+Apache Tomcat - It is basically a web server. AS for example hmne ek program banaya
+ aur usko run krne ke lia ya usko zinda rakhna ke lia ek client ke jrorat hoti hn
+ jo isme tomcat hn yh application ko chalana ka kam krta on web.
+
+ Yeah maven ke andr spring file ke andr hota hain.hume alag se isko download ni krna
+ pdhta hai.maven basically class files ko .jar files bana deta hain (compile kr deta hain)
+ aur folder mein dalkr run kr deta hain.
+
+                  ---------Work of maven----------
+
+~At first we make a maven project through eclipse then we name the group id as we name
+packages in reverse domain name ....then we enter the name of the project.
+then we save the file we get target file which can be deleted and pom.xml files
+where ever we get pom.xml files it means its a maven project/file.
+maven install command compile the class files then make .jar(java archieved) ->
+[NOTE:java archieved file are nothing but zipped files which is packed in a container] files
+jar files --> project name.jar files (build artifact).
+
+Ab .m2 name se ek folder ban jayaga machinary pe jisse hm maven local repository bolta hai.
+***
+--> MAVEN main work is to create depedency work easy -
+IF we have installed a library in maven project in depedency there always the Version
+is hidden as when we installed a library it consist of many codes in it and many files
+containing with many versions but maven make it easy as it identify itself and select a
+right file version for it on which your maven project is working .
+
+AS for example -
+If a person working on a maven project and having a library of version 1 code in it which
+works on version 1 but what if the on which app the user working on it got upgraded now
+the user code of version 1 will not work on it so he have to install the another version
+like this goes as if the version code only changed so he have to install a anither one
+to resolve this conflict or problem maven build tool is use which automatically set the
+Version. A lib having a many no. of files and version present in it to figure out in each
+step it itself a headache.

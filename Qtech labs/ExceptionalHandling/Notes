@@ -1,0 +1,24 @@
+**************************
+TOPIC - exceptionalHAndling
+***************************
+
+1)RuntimeException and its child classes, Error and its child classes are unchecked
+exceptions.(mtlb compile ho jayga wo isko check nahi krega ,compile hone ke bad
+exception show hoga)
+
+2)Throwable se exceptionalHAndling start hoti hain.
+(Throwable ke andr exceptionalHAndling ati hain).
+Throwable ek class hain.
+
+Note:The java.lang.Throwable class is the root class of Java Exception hierarchy
+inherited by two subclasses: Exception and Error
+
+-------------------------
+Java Exception Keywords
+-------------------------
+
+1)finally keyword - iska kam hota hain ke yh chalta hain chahe exceptions kyu n aye
+try catch n kkre ya kre dono case mein finally chalega.
+
+2)throw keyword - Sometimes we can create Exception object explicitly and we can hand
+over to the JVM manually by using throw KEYWORD.

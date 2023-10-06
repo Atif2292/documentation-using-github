@@ -1,0 +1,144 @@
+***********class story***************
+
+-----------Need of identity?------------
+
+Authentication - Iska mtlb hota han ki har banda ka pass ek identification hona
+chahiye like ek bnda hn usko bank mein jana han tu wo agr waha ka employe hn tu
+usko security gaurd ko apni identity btana pdegi entry ke lia apna card show krna
+pdega.
+
+Authorisation - iska mtlb hota hn ke apko kitna authorise kia gaya han jaisa ki
+ek bank ke employe ko lockers ya aur bhi area ka excess nahi hota hai ..aur waha
+ke jo manager hota hn unko access hn mtlb unko waha ki authorisation hn.
+---------------END--------------------
+
+--------How to get enter in a program through different machines on web?------------
+
+everthing is connect through the web called internet web.
+every machinary is connected through this.
+there are some terms as first we know that machine is  usaully known as IP address
+and inside that every program have its own and identified port number (different)
+around there are 65k diff. ports .
+
+for examples- if a international client wants to know someones house (faraz house)
+first of all he/she should know that client live in india then state (u.p) then in u.p
+where he live (as jhashi) then in jhashi where and finally after all that he reached
+home he should know the name of a person whom he want to meet in that house (port no)
+what if two twins live in that house so the person should have clearification.
+like that only to reach a machine we need a ip address then to access the machine
+to find out the port we should know abt the port no. in which program is working.
+(NOTE:In between this reverse proxy also works.)
+
+After reading the above story we can have a common doubt in our mind that we use
+443 port for all google chrome facebook etc but it isnt true its a port number
+for https when a protocol is called in http then it comes to proxy which check
+and sends the information to given port . Similarly we can send the info by Reverse
+proxy.It is basically in scripted form (code language) so noone can understand in
+between.
+
+
+-----------{https://domain name or ip address.com:443}-----------
+in above text there https is basically a protocol and 443 is nothing but a port no.
+which works in https protocol.(here s in https indicates that this site is secured)
+--------------------END----------------------
+
+
+-----------why we use reverse domain name?-----------
+
+Reverse-DNS names are a simple way of eliminating namespace collisions, since
+any domain name is globally unique to its registered owner.
+
+As for example - com.qtechlabs.calculator-applicatiom
+here we can see the reverse domain as calculator-application is the actual name
+of the program and com is the last word use at first .this help us to give unique
+identity name so that we cannot have same name multiple software/program.here
+qtechlabs is the domain name which is unique in the whole world web which make it
+identical.
+
+
+For eg- if three people made the apllicatrion of calcultor with different features
+but with same  name as calculator-application and one genuine person is downloading
+the application and that person wants to install all the three application but if he try
+to dowmload that machine will say download but delte the existing one because this application
+you already have but if he have its reverse domain name as com.atif.calculator-application,
+(here atif is the universal  doamin name which make it world web unique) com.munaf.calculator-application,
+com.faraz.calculator-application.now all these three have different names so a person can install all these
+programs or applications.
+
+These are called packages -(com.qtechlabs.calculator-application) as package is nothing
+but containing many files inside it.
+more over to cover it there are large libraries which consist of packages.
+these large library are already made by peoples these are large codes which we use
+one example of them is string[].
+----------------------END-------------------------------
+
+------------CONCEPT OF LIBRARY-------------
+
+In lamen language libray is a programming library is a collection of
+prewritten code that programmers can use to optimize tasks.
+
+library is nothing but large files as in java programming library are .class files
+Library are pre defined or made by the developer to make it easy for us in making
+PROGRAM as we can use these libraries we do not have to make it we can take it
+it is basically a container in which many files inserted we call it in the form of jar
+files (java archieved) .
+
+IN a JAVA program we have to make a class consist of  attributes and
+method in it and a main method should be present in it getter and setter are
+also methods.
+A library also comes under mehtod in a java class .
+
+------------END----------------
+
+----------CONCEPT OF {CLIENT --> WEB APPLICATION --> DATABASE}-------------
+
+FOR EXAMPLE-
+when a client or user login or sign in FB . The client or user should sign in or
+login in the GUI based appilication we give the information in it and the appilication
+sends the informatiom to the web appilication and web appilication connects through a
+program to DB(database) where all the information is saved or created or updated.
+
+Basically database works on CRUD(create,redo,undo,delete).SO a web appilication connects
+to the DB and do any of the work from CRUD.and then database gives back the info to the
+web appilication through a program which created by a developer and the path is created
+through  a client to web appilication is created by us.So now the DB gives the info
+to web appilication and web appilication gives the info to the client.
+
+This all process is done besides the application its a backview of how programs
+/appilicationn run.
+-------------END----------------
+----------WHy we use web appilication in b/w a client and a database?-------------
+
+As database have billions of info. inside it or different web appilication so it makes
+typical to get the right info so fast and making it confusing so to resolve this conflict
+we use a web appilication b/w the client and DB.
+ ----------END-------------------
+--------FORMATs---------
+pom.xml - xml format it is
+JSON - is a fromat for eg.-
+{
+"name" : "Mohd Atif",
+"age" : "18",
+"salary": "xyz"
+}
+----------------END----------------
+
+-----------what are packages?----------
+packages are basically folders.
+as when we create a package its makes no.of folder in a reverse domain to make it unique.
+
+--------------SYntext------------
+The rules that control the structure of the symbols, punctuation, and words of
+a programming language.
+
+===================
+-------STACK -------
+===================
+
+Jab hum java mein code ko run krte hain tu jvm(Java virtual machine) ke andr bht
+sare workers hote hain thread ke andr basically thread phir kise ek worker ko bhejta
+jiska naam main hain wo method ko chalata hain aur phir stack banna suru hote hain
+basically boxes hote hn variable jisme value ati jati hain aur store hoti jate hain
+phir jaisa jaisa unka use ho jata hn vaisa vaisa wo hatte jate hain. usko remove
+kr dia jata hain.aur hum stack ko print kr skta hain , sou se . aur yh hame debug
+ke time pr lines show hoti hain.

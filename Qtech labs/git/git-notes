@@ -1,0 +1,64 @@
+aGIT - a local repository(a place or container in which something is stored in large
+ quantities and can edit it.)
+- Git-- is a VCS(version control system/software)--SVN-is a type (old version)\
+
+                          --------------Git command ----------------
+  1- git innit -->  create a new git repo (get .git file)
+  2- git status --> To check status
+  3- git add --> Enter git add --all at the command line prompt in your local
+               project directory to add the files or changes to the repository.
+  4- git commit --> To add in branch completely
+  5- git push --> To push folder to git repo
+  6- git checkout --> To change branch
+  7- git stash   -->  temporarily shelves (or stashes) changes you've made to
+                 your working copy so you can work on something else, and then
+                 come back and re-apply them later on.
+  8 - git log  --> to show logs
+  9 - git merge ---> To merge branch
+ 10 -  git diff ---> The git diff command helps you see, compare, and understand
+                   changes in your project.
+
+  ///////terms to use///////// -
+
+1 - pull request/ merge request
+2 - conflict
+
+                      -------GIT have two branches--------
+1- Master
+2- Develop
+              -------------------GIT WORK--------------------
+~IF we added a code in git first it is compiled in master then it copy paste as it is
+in develop folder then if we are going to edit the code we get a new branch we can name it
+and edit the code in it and merge it in develop then it get merge in master then the new code
+is also saved in master and develop and the new branch got deleted when the code is compiled
+ot merge in other two.
+
+                    ---------WHy we need GIT?-----------
+
+AS for example- if a client said to us to make a basic calculator program and we maked it
+and give to the client he use it later he want some changes and we maked that changes in that
+code as long as this goes on but what if someone wants the first version of it we maked,it again
+need a manpower ,what if we saved that basic versi0n then we can directly give that code to the client
+it makes us easier things.
+
+For that reason we need a git program as its work is to make the first code as it is and the
+later changes on it will save as a new code so that the old code is saved and new code is also
+saved in another place.
+
+-------------------------------------------
+Steps To make gitrepo in github through CLI
+-------------------------------------------
+
+Step 1 : Making a folder through command - mkdir <folder-name>
+Step 2: Going in the Current Directory where the older is made - cd <folder-name>
+Step 3: Now check by git status we can see there is no .git files so we make a .git
+       file by intialising in it through - <git init> commands
+Step 4: Now check by command git status or ls command we can see the .git file in it
+Step 5 : we can make a folder in it by touch <file-name>
+Step 6: we can edit a file of git by vim <file-name>
+Step 7 : use git add . command to add all the changes in git repo or add <file-name>
+        in this specific file will be added
+Step 8:  use git commit -m "<message-which-you-want-to-give>"
+       Now the file is saved with the changes .
+Next step is done to send the file in github repo to save it there.
+Step 9: pull command is used as -git pull- command

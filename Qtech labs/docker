@@ -1,0 +1,63 @@
+ABOUT DOCKER!!!
+---------------
+Docker is a platform that enables creating, deploying, and running applications
+with the help of containers
+
+
+==============================
+HOW TO CREATE IMAGE OF DOCKER
+==============================
+docker --help --> for linux CLI
+
+STEP-1:docker image pull <image-from-docker-hub> - command hoti hain image lane ki.
+
+STEP-2:docker build image <image-name> - This is used to create image.
+-docker build -t <image-name>:1.0 (here 1.0 is tag or version of image)
+STEP-3:check with the help of docker image ls that image is created or not.
+
+==============================
+HOW TO CREATE  DOCKER CONTAINER
+==============================
+STEP-1:docker container create -p portnumber of machine :portnumber for container of vm
+<image-name>:1.0 (here 1.0 is tag or version of image)
+
+IMP:container is created
+
+STEP-2:docker container start <idname>
+
+step-3:docker container log -f <id>  ---> this is use to show logs.
+docker Container run -d (d is for detach mode -> wo conatiner ke logs print ni honga)
+ --name=webapp -p 9092:9092 <image-name>:<tag/version>
+
+===============
+Docker Commands
+===============
+
+    docker image build -t <image-name>:<tag/version> . --> use to build image
+    docker –version-->This command is used to get the current version of the docker
+    docker pull. Pull an image or a repository from a registry. ...
+    docker container run --> To run the container
+    docker ps --> to show containers
+    docker container exec -it
+    docker container stop <id> --> To stop the container
+    docker container restart --> To restart the container
+    docker container kill --> To kill the container
+    docker container prune --> delete all non running container
+    docker image ls --> To see images
+    docker container ls --> To see all container
+    docker containeer ls -a --> To see running container
+    docker container start <idname> --> To start a container
+    docker pull -->	Pull an image or a repository from a registry
+    docker push	-->Push an image or a repository to a registry
+    docker container -rm <id> --> to remove a container
+    docker container -rm -f <id> --> to remove running container forcefully
+    docker container run --name product -p 9090:9090 -e MYSQL_ROOT_PASSWORD=abc123
+    --network <network-name> <image-name>:<tag/version>
+    (here -e is for environmental variable)
+   --rm: Automatically removes the container when it stops. This is useful for
+   disposable containers, but be aware that any data inside the container will
+   be lost when it's removed.
+
+docker container rm -f <id>
+
+docker network create my-network --> use to give network

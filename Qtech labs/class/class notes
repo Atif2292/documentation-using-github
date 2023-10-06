@@ -1,0 +1,303 @@
+--------------------------{class notes}---------------------------
+===============================================================================
+Our main mission or goal is to create a highly scalable fault, tolerant ,robust
+and -RESILIANT- application.
+================================================================================
+CTrl + Alt + w = used for quite the current window.
+NOTE: Debug krne ke time jo side mein likh kr lines ati hain usko "STACK TRACE" bolta hain.
+
+***********
+FUll FORMS
+***********
+AZ'S-- abilibilty zones.
+comma seperate values-CSV.
+amazon elastic compute cloud- EC2
+DTO - data transfer object.
+JSON- Java script object notation.
+OOPS- object oriented programming system.
+DatabaseConnection
+SRS- Service Requirement System - library mein use hote hain.
+command line interface - CLI
+
+***********
+VALUE POINT-
+***********
+1)SSH or Secure Shell is a network communication protocol that enables two computers
+to communicate (c.f http or hypertext transfer protocol, which is the protocol used
+to transfer hypertext such as web pages) and share data.
+2)SSh port- 22.
+3)update, insert ,delete - only these 3 commands work on rollback.
+4)CRUD operation - database.- create recreate update delete.
+5)browser is a web client.
+6)annoatation [@]ke age likhne wale for eg - @postmapping
+jo method bana rhe hn eg-public repositoryentity<String>cashwithdrawal
+RestApi bolta hai.
+7)package manager types-
+1- apt,
+2-apt-get
+3- yum,
+
+
+***********************
+Servlets and JSP notes-
+***********************
+------------------------------------------
+Model View Controller (MVC)
+Servlets don’t have a main() method.
+They’re under the control of another Java
+application called a Container.
+Tomcat is an example of a Container.
+HTML- the HyperText
+Markup Language
+POST is a more powerful request. It’s like a
+GET plus plus
+URLs-Uniform Resource Locators,
+-----------------------------------------------
+
+***************
+30-JUNE-2023
+***************
+POINTS-
+
+1)mutilevel possible hn mutiple nahi hain.
+2)Concreate class mtlb jisme implement present ho jisme object bannrhe ho method call ho rhe ho.
+3)State and behavior = variable and method logic.
+4)Imutable class ki object kabhi change nahi hoti.
+5)String class imutable hoti hain.
+6)arg - method ke andr jo input hote hn usse argument kehte hn.
+7)Object ki state/variable ko initialise krna wala kam contractor krta h at a time of creation,
+ basically varible mein value dalna.
+8)Same type like class se class tu extend aur agr class se interface ya vice versa to implement.
+9)Non Concreate class is same as abstract class
+10)FIFO - First In First Out - QUEUE
+11)LIFO - Last In First Out - STACK
+12)signature includes methodname and argument in it
+
+************
+01-JULY-2023
+************
+KEYPOINTS-
+1)final laga dia mtlb value change nahi kr skta .
+2)static class level ke lia hota hain isko kise bhi jgh change krenge tu sare
+jgh value change ho jaygi.
+3)parent class reference can hold the child object.
+4)interface contract ke lia bnata hain.
+5)implement(keyword) interface ke lia use hota hain.
+
+*************
+03-JULY-2023
+************
+POINT 1-
+
+ek class sirf ek class ko extend kr skte aur multiple class ko implement kr skte
+hn.
+ek contract ke multiple implementation ho skta  hain.
+----------------------------------
+POINT 2 -
+
+public interface RandomAccess{
+
+}
+yeah khali hain.aisa bhi ho skta hain.
+Cloneable,Serializable yeah bhi aisehe hain.
+---------------------------------
+POINT 3-
+***
+NOTE:class mein abstract method bs ko override krna mendotory hain non- abstract ka nahi
+pr interface mein jrori hn override krne ke lia kyuki usme method nahi hota hain
+call krne ke lia.tu interface ko override krna pdta hain chlana ke lia.
+--------------------
+POINT 5-
+
+There are four Modifiers-
+Default modifier - kuch bhi na likho.
+private
+public
+protected
+--------
+POINT 6-
+
+Throwable se exceptionalHAndling start hoti hain.
+(Throwable ke andr exceptionalHAndling ati hain).
+Throwable ek class hain.
+
+
+*************
+04-JULY-2023
+************
+
+1)Overloading is a Compile time polymorphism
+2)Overriding is a Run time polymorphism.
+
+NOTE: JAVA.lang default package hota hain.
+(Jab koi package nahi dalo tu eclipse apna app ek package bana leta deafault name
+se wo "java.lang" hota hain.)
+
+************
+05-JULY-2023
+************
+
+Wrapper classes- har primitive type ke lia ek class bana di jisse Wrapper class
+kehte hn.collection primitive ko support nhi krte tu islea Wrapper class bani.
+
+
+Marker interface - inme kuch nahi hota khali for eg - Serializable ,Cloneable,
+RandomAccess
+
+*************
+06-July-2023
+**************
+-----------
+Working Set
+------------
+- A Working Set is a subsets of your  projects.
+It is used to make files in a structured manner in eclipse.
+It make us help in figuring out the files aand folders.
+It is given in view menu option in eclipse where we can go and clicl on configure
+working set and make a new working set every day.
+
+************
+10-JULY-2023
+************
+-----------
+Two types of application -
+1- mono lithic.
+2- micro service architecture.
+
+************
+21-JULY-2023
+************
+Executable jar
+- These jar files are runnable.
+-
+
+Plugins are of different types
+one of them is use to bundle up the files whcih is called build in plugin.
+************
+27-JULY-2023
+************
+
+video lecture + Programs
+
+************
+28-JULY-2023
+************
+Sorting
+VSCode IDE -Visual Studio Code is a code editor redefined and optimized for
+building and debugging modern web and cloud applications
+
+************
+29-JULY-2023
+************
+1)HTML ,CSS , JAVASCript - W3 se padhna hain.
+2)Interview Questions.(TOP 100 Core JAVA programs for interview in JAVA.)
+3)Generics
+4)Object class ke 11 method pdhna hai.
+5)Durgasoft PDF on daily bases.
+i)JAVA.lang
+
+NOTE: 07-08-2023 tareek se phirse core java.
+
+6)Sorting and searching ki algorithms ke aur tree ke  program bnana hain
+
+************
+30-JULY-2023
+************
+Annotations
+i)@Qualifier - iska use hota hain ki jab bean ban jate hn tu obj jb usko point
+krra hota hain tu yh specify krta hain ke kisko point krna haiin kaunse wale bean
+ko.
+ii)@Repository
+iii)@Component
+iv)@Service
+*(ii-iv) mein yeah use hote han bean banana ke lia yh us class ke bean bana leti
+haiin
+V)Autowired - yeah apna ap obj bana deti hain keval variable initialise krna hota
+ hai
+
+************
+31-JULY-2023
+************
+web client - http.ie
+binary tree program
+
+
+************
+04-JULY-2023
+************
+Sunday ko phython krna hain.
+github pe account bana lena.
+
+********
+React JS - 31-SEP-2023
+********
+
+const ke lia change nai kr skta.  "let" aur "var" kr value change kr skta hain
+How to creat a new reactJS program.
+
+---------
+CONCEPTS-
+---------
+
+  1) Component - component is nothing but a custom html element
+  2) Props - properties/attributes
+  3) State -
+  4) Two-way data-binding
+  5) Http call -
+  6) Redux - A libray
+  7) Routing (multi pages single page appilication)
+  8) NEXTJS
+
+************
+12-SEP-2023
+************
+Grey Lock
+
+Event driven architecture
+
+self signed certificate
+
+----------------------------------
+  Name - JHOLA
+modules - email ki service bnayga
+        - discovery service
+        - api gateway
+        -  payment gateway
+        - security
+      (com.jhola )
+----------------
+  Dependencies
+----------------
+  parent pom dependency management hoga -
+  Inside dependency-management  -->
+
+  1) Spring strater web
+  2)starter jpa
+  3)starter devtool
+  4)swagger
+  5)model mapper
+  6)h2
+  7)mysql
+  ##  eureka
+  8)spring cloud - pom based project
+  9)security
+
+----------------------
+Appilication.properties
+-----------------------
+    server  port
+    mysql properties
+    actuator properties
+    micrometer properties
+    Banner.txt
+
+
+
+
+
+Header --> syntext --> key value pair --> content type hota ha
+
+----------
+24-09-2023
+-----------
+enhance reverse proxy = api-gateway
